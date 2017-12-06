@@ -11,6 +11,8 @@ import { SalesData2Service } from './sales-data2.service';
 import { InitCapsPipe } from './shared/init-caps.pipe';
 import { LoginModule } from './login/login.module';
 import { DashboardComponent } from './dashboard/dashboard.component'
+import { AdminModule } from './admin/admin.module';
+import { AdminComponent } from './admin/admin.component';
 
 @NgModule({
   declarations: [
@@ -19,11 +21,13 @@ import { DashboardComponent } from './dashboard/dashboard.component'
     OrdersComponent,
     SearchBoxDirective,
     InitCapsPipe,
-    DashboardComponent
+    DashboardComponent,
+    AdminComponent
   ],
   imports: [
     BrowserModule,
     LoginModule,
+    AdminModule,
     AppRoutingModule
   ],
   providers: [SalesDataService, SalesData2Service],
