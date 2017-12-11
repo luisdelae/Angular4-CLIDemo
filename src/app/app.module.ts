@@ -13,6 +13,7 @@ import { LoginModule } from './login/login.module';
 import { DashboardComponent } from './dashboard/dashboard.component'
 import { AdminModule } from './admin/admin.module';
 import { AdminComponent } from './admin/admin.component';
+import { MatButtonModule, MatIconModule, MatIconRegistry} from '@angular/material';
 
 @NgModule({
   declarations: [
@@ -28,7 +29,8 @@ import { AdminComponent } from './admin/admin.component';
     BrowserModule,
     LoginModule,
     AdminModule,
-    AppRoutingModule
+    AppRoutingModule,
+    MatButtonModule, MatIconModule
   ],
   providers: [SalesDataService, SalesData2Service],
   bootstrap: [AppComponent]
